@@ -1,0 +1,245 @@
+.l-header {
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0 -6px 5px 5px var(--color-stone);
+    height: 80px;
+}
+
+.l-header-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-white);
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    display: none;
+}
+
+.l-header-button-mobile {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 35px;
+    margin-right: 10px;
+}
+
+.l-header-content-mobile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.l-banner-container {
+    background-color: #000;
+    position: relative;
+    text-align: center;
+}
+
+.l-banner-inputContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.l-about-container {
+    padding: 120px 20px 120px;
+    background-color: #000;
+}
+
+.l-about-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.l-meat-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 20px 120px;
+}
+
+
+.red-border {
+    border-bottom: 2px solid #d7182a;
+}
+
+
+.l-meat-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.l-meat-header .red-line {
+    margin: 5px auto;
+}
+
+.l-meat-header-subtitle {
+    margin-top: 40px;
+
+}
+
+.l-meat-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.l-meat-card-imageWrapper {
+    position: relative;
+    max-width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    z-index: 1;
+}
+
+.l-location-container {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    border-top: 2px solid #d7182a;
+}
+
+.l-location-header {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 1;
+}
+
+.l-location-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.l-location-subheader {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.l-footer {
+    border-top: 5px solid #d7182a;
+    padding: 60px 20px 70px;
+    background-image: linear-gradient(180deg,#000 60%,#420e13);
+}
+
+.l-footer-logo-center {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.l-footer-nav-container {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.l-footer-nav-container .red-line {
+    height: 2px;
+    width: 50px;
+    background-color: var(--color-spicedCrimson);
+    margin: 5px 0px 20px 0px;
+}
+
+.l-list-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.l-footer-container { 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.l-footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and  (min-width: 768px) {
+
+    .l-footer-wrapper{
+        margin-top: 70px;
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        align-items: flex-start;
+    }
+
+    .footer-navContainers--social h4 {
+        font-size: 24px;
+    }
+
+    .footer-navContainers h4 {
+        font-size: 22px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+    .l-header-mobile {
+        display: none;
+    }
+
+    .l-meat-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .l-about-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .l-about-text {
+        flex-basis: 100%;
+        flex: 1;
+    }
+
+    .l-about-img {
+        flex-basis: 100%;
+        width: 100%;
+        flex: 1;
+    }
+
+    .l-meat-header-subtitle {
+        max-width: 1200px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .l-meat-header-subtitle {
+        max-width: 600px;
+        margin: 40px auto;
+    }
+
+    /* FOOTER */
+    .l-footer-wrapper{
+        gap: 90px;
+    }
+
+}

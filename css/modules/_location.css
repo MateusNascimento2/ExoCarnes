@@ -1,0 +1,25 @@
+.c-video-banner {
+    width: 100%;
+    object-fit: cover;
+}
+
+.c-location-title { 
+    color: #FFF;
+    font-size: 18px;
+    letter-spacing: 4px
+}
+
+.c-location-subtitle {
+    color: #c0c0c0;
+    font-size: 14px;
+}
+
+.c-location-map {
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .c-location-subtitle {
+        font-size: 16px;
+    }
+}

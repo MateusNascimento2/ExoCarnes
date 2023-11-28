@@ -1,0 +1,42 @@
+:root {
+    --color-white: #fff;
+    --background-color: #fbfaf8;
+    --color-stone: #939393;
+    --color-slate: #262421;
+    --color-black: #000;
+    --color-spicedCrimson: #d14124;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.text-red {
+    color: var(--color-spicedCrimson);
+}
+
+.red-line {
+    height: 2px;
+    width: 80px;
+    background-color: var(--color-spicedCrimson);
+    margin: 5px 0px 30px 0px;
+}
