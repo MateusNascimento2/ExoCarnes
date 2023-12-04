@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/modules/_card.css">
     <link rel="stylesheet" href="./css/modules/_location.css">
     <link rel="stylesheet" href="./css/modules/_footer.css">
+    <link rel="stylesheet" href="./css/modules/_contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -345,7 +346,32 @@
                 </div>
             </div>
         </section>
-        <section id="location" style="padding-top: 120px;">
+        <section id="contact-us">
+            <div class="l-contact-banner">
+                <div class="l-contact-header">
+                    <h2 class="c-contact-title">CONTATE-NOS</h2>
+                    <div class="red-line"></div>
+                    <p class="c-contact-subtitle">VAMOS INICIAR UMA CONVERSA!</p>
+                    <p class="c-contact-subtitle--gray">Tem uma pergunta que não foi respondida em outro lugar? Quer nos contar o que pensa? Tem um comentário, sugestão ou simplesmente quer entrar em contato?</p>
+                </div>
+            </div>
+            <div class="l-contact-form">
+                <div class="l-form-container">
+                    <form action="" class="c-form">
+                        <div class="c-form-control">
+                            <input class="c-form-inputs" type="text" placeholder="Nome Completo" name="full-name" id="full-name">
+                        </div>
+                        <div class="c-form-control">
+                            <input class="c-form-inputs" type="email" name="email" id="email" placeholder="E-mail">
+                        </div class="c-form-control">
+                        <div class="c-form-control">
+                            <textarea class="c-form-inputs" name="message" id="message" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="location">
             <div class="l-location-container">
                 <video class="c-video-banner" src="images\Breathable_backgrounds_Desktop.mp4" loop autoplay muted height="300px"></video>
                 <div class="l-location-header">
@@ -452,6 +478,9 @@
             </div>
         </div>
     </footer>
+    <div class="l-subfooter-container">
+        <p class="c-subfooter-copyright">© 2023 ExoCarnes Ltd. Todos os Direitos Reservados</p>
+    </div>
     <script src="./scripts/index.js"></script>
 </body>
 

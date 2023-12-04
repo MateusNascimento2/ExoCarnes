@@ -102,6 +102,32 @@
     z-index: 1;
 }
 
+.l-contact-banner {
+    background-color: #000;
+    background-image: linear-gradient(180deg,#190607 50%,#420e13);
+    padding-top: 90px;
+    padding-bottom: 80px;
+}
+
+.l-contact-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.l-contact-form {
+    background-color: #171717;
+    padding: 76px 20px;
+}
+
+.l-form-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .l-location-container {
     width: 100%;
     position: relative;
@@ -173,6 +199,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.l-subfooter-container {
+    background-color: #0b0a0a;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 

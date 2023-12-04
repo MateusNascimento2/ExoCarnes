@@ -2,7 +2,8 @@
     font-size: 18px;
     letter-spacing: 4px;
     margin-top: 20px;
-    color: #939393;
+    color: rgba(255,255,255,.6);
+
 }
 
 .c-about-subtitle {
@@ -16,7 +17,7 @@
     font-size: 16px;
     margin-top: 20px;
     line-height: 1.5;
-    color: #939393;
+    color: rgba(255,255,255,.6);
 }
 
 .c-about-img {
