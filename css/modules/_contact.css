@@ -37,6 +37,7 @@
     width: 100%;
     background-color: #222;
     border:1px solid black;
+    color: #FFF;
 }
 
 @media screen and (min-width: 1024px) { 
