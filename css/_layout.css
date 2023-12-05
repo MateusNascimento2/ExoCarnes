@@ -16,7 +16,7 @@
     width: 100vw;
     height: 100vh;
     z-index: 999;
-    transition: top .25s ease-in-out;
+    transition: top .75s ease-in-out;
 }
 
 .l-header-button-mobile {
@@ -87,7 +87,13 @@
 
 }
 
-.l-meat-cards {
+.l-ExoticMeat-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.l-PrimeMeat-cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 40px;
@@ -238,7 +244,11 @@
         display: none;
     }
 
-    .l-meat-cards {
+    .l-ExoticMeat-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .l-PrimeMeat-cards {
         grid-template-columns: repeat(3, 1fr);
     }
 
