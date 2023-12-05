@@ -10,13 +10,13 @@
 
 .l-header-mobile {
     position: fixed;
-    top: 0;
+    top: -100vh;
     left: 0;
     background-color: var(--color-white);
     width: 100vw;
     height: 100vh;
     z-index: 999;
-    display: none;
+    transition: top .25s ease-in-out;
 }
 
 .l-header-button-mobile {

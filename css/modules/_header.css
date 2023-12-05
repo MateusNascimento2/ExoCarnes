@@ -39,12 +39,9 @@
 }
 
 ._is-open {
-    display: block;
+    top: 0vh;
 }
 
-._is-closed {
-    display: none;
-}
 
 @media screen and (min-width: 1024px) {
 
