@@ -1,4 +1,4 @@
-import { carnesExoticas, carnesNobres } from "./mocks.js";
+import { exoticMeats, primeMeats } from "./mocks.js";
 
 const headerButtonOpen = document.getElementById('c-navbar-button-open');
 const headerButtonClose = document.getElementById('c-navbar-button-close');
@@ -7,21 +7,26 @@ const linksMobile = document.querySelectorAll('.link-mobile');
 const exoticCardsContainer = document.querySelector('.l-ExoticMeat-cards');
 const primeCardsContainer = document.querySelector('.l-PrimeMeat-cards');
 
+//Functions to open and close the header menu when it's on mobile screens
 headerButtonOpen.addEventListener('click', function() {
   headerMobile.classList.toggle('_is-open')
 })
 
+//Functions to open and close the header menu when it's on mobile screens
 headerButtonClose.addEventListener('click', function() {
   headerMobile.classList.toggle('_is-open');
 })
 
+//Function to close the header menu when the user clicks on a link
 linksMobile.forEach((link) => {
   link.addEventListener('click', () => {
     headerMobile.classList.remove('_is-open');
   })
 })
 
-carnesExoticas.forEach((object) => {
+
+//Functions to get the data from the mocks.js file and mount the card element in the index.html file
+exoticMeats.forEach((object) => {
   const cardWrapper = document.createElement('div');
   cardWrapper.classList.add('c-card-wrapper');
 
@@ -38,11 +43,11 @@ carnesExoticas.forEach((object) => {
 
   const h3 = document.createElement('h3');
   h3.classList.add('c-content-title');
-  h3.textContent = object.nome;
+  h3.textContent = object.name;
 
   const price = document.createElement('p');
   price.classList.add('c-content-price');
-  price.textContent = `R$ ${object.preco}`;
+  price.textContent = `R$ ${object.price}`;
 
   const buttonBuy = document.createElement('a');
   buttonBuy.classList.add('c-content-buy-button');
@@ -59,7 +64,8 @@ carnesExoticas.forEach((object) => {
   exoticCardsContainer.appendChild(cardWrapper);
 });
 
-carnesNobres.forEach((object) => {
+//Functions to get the data from the mocks.js file and mount the card element in the index.html file
+primeMeats.forEach((object) => {
   const cardWrapper = document.createElement('div');
   cardWrapper.classList.add('c-card-wrapper');
 
@@ -76,11 +82,11 @@ carnesNobres.forEach((object) => {
 
   const h3 = document.createElement('h3');
   h3.classList.add('c-content-title');
-  h3.textContent = object.nome;
+  h3.textContent = object.name;
 
   const price = document.createElement('p');
   price.classList.add('c-content-price');
-  price.textContent = `R$ ${object.preco}`;
+  price.textContent = `R$ ${object.price}`;
 
   const buttonBuy = document.createElement('a');
   buttonBuy.classList.add('c-content-buy-button');
