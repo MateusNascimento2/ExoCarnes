@@ -1,6 +1,7 @@
 import { exoticMeats, primeMeats } from "./mocks.js";
 import { createCard } from "./createCard.js";
 import { radioClick } from "./radioButton.js";
+import { openDropdown, selectDropdownItem } from "./dropdownComponent.js"
 
 const headerButtonOpen = document.getElementById('c-navbar-button-open');
 const headerButtonClose = document.getElementById('c-navbar-button-close');
@@ -9,6 +10,8 @@ const linksMobile = document.querySelectorAll('.link-mobile');
 const exoticCardsContainer = document.querySelector('.l-ExoticMeat-cards');
 const primeCardsContainer = document.querySelector('.l-PrimeMeat-cards');
 const radioDiv = document.querySelectorAll('.l-radio-button')
+const dropdownBox = document.querySelector('.l-dropdown-placeholder');
+const dropdownItem = document.querySelectorAll('.c-dropdown-item');
 
 //Functions to open and close the header menu when it's on mobile screens
 headerButtonOpen.addEventListener('click', function() {
@@ -39,3 +42,9 @@ primeMeats.forEach((meat) => {
 
 //Function to get the data and to mark the elements on the radio button component
 radioClick(radioDiv);
+
+//Functions to open, close and select the itens on the dropdown component
+openDropdown(dropdownBox);
+selectDropdownItem(dropdownItem, dropdownBox);
+
+

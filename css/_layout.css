@@ -144,7 +144,7 @@
     cursor: pointer;
 }
   
-  .l-radio-button {
+.l-radio-button {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -155,9 +155,54 @@
     max-width: 600px;
 }
   
-  .l-radio-button:hover {
+.l-radio-button:hover {
     filter: brightness(1.3)
 }
+
+.l-dropdown-container {
+    margin-top: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+}
+  
+.l-dropdown-placeholder {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 5px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+    background-color: #222;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.l-dropdown-arrows {
+    display: flex;
+    align-items: center;
+}
+  
+.l-dropdown-itens {
+    position: relative;
+    top: -100vh;
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid black;
+    background-color: #222;
+    color: #FFF;
+    transition: top 0.4s linear;
+}
+  
+._is-open {
+    top: -9px;
+    transition: top 0.4s linear;
+}
+  
 
 .l-location-container {
     width: 100%;

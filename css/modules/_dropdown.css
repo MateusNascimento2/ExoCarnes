@@ -1,0 +1,43 @@
+.c-dropdown-item {
+  border: 1px solid black;
+  margin-bottom: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.c-dropdown-item:hover {
+  border: 1px solid #d14124;
+  color: #d14124;
+}
+
+.c-dropdown-left-arrow {
+  width: 12px;
+  height: 2px;
+  border-bottom: 1px solid #d14124;
+  display: inline-block;
+  transform: rotate(320deg);
+  position: relative;
+  left: 1px;
+  transition: transform 0.2s linear 0.2s;
+}
+
+._left-arrow-open {
+  transform: rotate(40deg);
+  left: 2px;
+}
+
+.c-dropdown-right-arrow {
+  width: 12px;
+  height: 2px;
+  border-bottom: 1px solid #d14124;
+  display: inline-block;
+  transform: rotate(-320deg);
+  position: relative;
+  right: 1px;
+  transition: transform 0.2s linear 0.2s;
+}
+
+._right-arrow-open {
+  transform: rotate(-40deg);
+  right: 2px;
+}

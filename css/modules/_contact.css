@@ -32,6 +32,10 @@
     max-width: 600px;
 }
 
+.c-label-form {
+    color: #FFF;
+}
+
 .c-form-inputs {
     padding: 10px;
     width: 100%;

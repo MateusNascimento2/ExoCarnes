@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/modules/_footer.css">
     <link rel="stylesheet" href="./css/modules/_contact.css">
     <link rel="stylesheet" href="./css/modules/_radioButton.css">
+    <link rel="stylesheet" href="./css/modules/_dropdown.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -214,6 +215,8 @@
                         <div class="c-form-control">
                             <textarea class="c-form-inputs" name="message" id="message" cols="30" rows="10" placeholder="Mensagem"></textarea>
                         </div>
+                        <span class="c-label-form">Preferência:</span>
+                        <div class="red-line"></div>
                         <div class="l-radio-container">
                             <div class="l-radio-button">
                               <div class="c-radio-button"></div>
@@ -227,7 +230,33 @@
                               <div class="c-radio-button"></div>
                               <span class="c-radio-button-text">Ambas</span>
                             </div>
-                          </div>
+                        </div>
+                        <div class="l-dropdown-container">
+                            <div class="l-dropdown-placeholder">
+                              <span>Selecione seu tipo favorito de carne</span>
+                              <div class="l-dropdown-arrows">
+                                <span class="c-dropdown-left-arrow"></span>
+                                <span class="c-dropdown-right-arrow"></span>
+                              </div>
+                            </div>
+                            <div class="l-dropdown-itens">
+                              <div class="c-dropdown-item">
+                                <span>Bovina</span>
+                              </div>
+                              <div class="c-dropdown-item">
+                                <span>Suína</span>
+                              </div>
+                              <div class="c-dropdown-item">
+                                <span>Aves</span>
+                              </div>
+                              <div class="c-dropdown-item">
+                                <span>Frutos do Mar</span>
+                              </div>
+                              <div class="c-dropdown-item">
+                                <span>Outras</span>
+                              </div>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
