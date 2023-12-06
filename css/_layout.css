@@ -134,6 +134,31 @@
     margin: 0 auto;
 }
 
+.l-radio-container {
+    display: flex;
+    gap:10px;
+    align-items: center;
+    flex-direction: column;
+    background-color: #171717;
+    width: 100%;
+    cursor: pointer;
+}
+  
+  .l-radio-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #222;
+    border: 1px solid black;
+    padding: 8px;
+    width: 100%;
+    max-width: 600px;
+}
+  
+  .l-radio-button:hover {
+    filter: brightness(1.3)
+}
+
 .l-location-container {
     width: 100%;
     position: relative;
@@ -232,6 +257,16 @@
 
     .footer-navContainers h4 {
         font-size: 22px;
+    }
+
+    .l-radio-container {
+        display: flex;
+        gap:10px;
+        align-items: center;
+        flex-direction: row;
+        background-color: #171717;
+        width: 100%;
+        max-width: 600px;
     }
 
 }
