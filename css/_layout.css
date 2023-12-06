@@ -141,7 +141,6 @@
     flex-direction: column;
     background-color: #171717;
     width: 100%;
-    cursor: pointer;
 }
   
 .l-radio-button {
@@ -153,6 +152,7 @@
     padding: 8px;
     width: 100%;
     max-width: 600px;
+    cursor: pointer;
 }
   
 .l-radio-button:hover {
