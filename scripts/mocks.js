@@ -19,19 +19,19 @@ export const exoticMeats = [
 
   {
     imageSrc: './images/tomahawk.png',
-    name: 'PRIME RIBS TOMAHAWK',
+    name: 'Prime Ribs Tomahawk',
     price: '60,00'
   },
 
   {
     imageSrc: './images/carne_avestruz.png',
-    name: 'CORTES DE AVESTRUZ',
+    name: 'Cortes de Avestruz',
     price: '40,00'
   },
 
   {
     imageSrc: './images/picanha_javali.jpg',
-    name: 'PICANHA DE JAVALI',
+    name: 'Picanha de Javali',
     price: '149,90'
   },
 ]

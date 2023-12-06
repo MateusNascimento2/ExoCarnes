@@ -161,9 +161,9 @@
 
 .l-dropdown-container {
     margin-top: 10px;
-    overflow: hidden;
     width: 100%;
     max-width: 600px;
+    position: relative;
 }
   
 .l-dropdown-placeholder {
@@ -188,21 +188,23 @@
 }
   
 .l-dropdown-itens {
-    position: relative;
-    top: -100vh;
+    position: absolute;
     padding: 5px;
-    margin-top: 10px;
+    top: -190px;
     border: 1px solid black;
     background-color: #222;
     color: #FFF;
     transition: top 0.4s linear;
+    z-index: 5;
+    width: 100%;
+    max-width: 600px;
 }
   
-._is-open {
-    top: -9px;
+._dropdown-is-open {
+    top: 40px;
     transition: top 0.4s linear;
 }
-  
+ 
 
 .l-location-container {
     width: 100%;

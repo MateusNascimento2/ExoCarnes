@@ -1,8 +1,9 @@
 
 export const openDropdown = (dropdownBox) => {
   dropdownBox.addEventListener('click', () => {
+
     const dropdownItensContainer = document.querySelector('.l-dropdown-itens');
-    dropdownItensContainer.classList.toggle('_is-open');
+    dropdownItensContainer.classList.toggle('_dropdown-is-open');
 
     const dropdownLeftArrow = document.querySelector('.c-dropdown-left-arrow');
     dropdownLeftArrow.classList.toggle('_left-arrow-open');
@@ -21,7 +22,7 @@ export const selectDropdownItem = (dropdownItem, dropdownBox) => {
 
       const dropdownItensContainer = document.querySelector('.l-dropdown-itens');
 
-      dropdownItensContainer.classList.remove('_is-open');
+      dropdownItensContainer.classList.remove('_dropdown-is-open');
 
       const dropdownLeftArrow = document.querySelector('.c-dropdown-left-arrow');
       dropdownLeftArrow.classList.remove('_left-arrow-open');
