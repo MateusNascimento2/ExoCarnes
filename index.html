@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/modules/_contact.css">
     <link rel="stylesheet" href="./css/modules/_radioButton.css">
     <link rel="stylesheet" href="./css/modules/_dropdown.css">
+    <link rel="stylesheet" href="./css/modules/_checkbox.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -215,8 +216,9 @@
                         <div class="c-form-control">
                             <textarea class="c-form-inputs" name="message" id="message" cols="30" rows="10" placeholder="Mensagem"></textarea>
                         </div>
-                        <span class="c-label-form">Preferência:</span>
-                        <div class="red-line"></div>
+                        <div class="l-form-label">
+                            <p class="c-label-form">Preferência:</p>
+                        </div>
                         <div class="l-radio-container">
                             <div class="l-radio-button">
                               <div class="c-radio-button"></div>
@@ -257,8 +259,24 @@
                               </li>
                             </ul>
                         </div>
-                        <div style="color: #ffffff;">
-                            aosdfjhsoijhiohjfsdahgosfgds
+                        <div class="l-form-label">
+                            <p class="c-label-form">Receber comunicações por:</p>
+                        </div>
+                        <div class="l-checkbox-container">
+                            <div class="l-checkbox-wrapper">
+                                <div class="c-checkbox-container">
+                                    <div class="c-checkbox"><i class="fa-solid fa-check" style="color: #ffffff;"></i></div>
+                                    <span class="c-checkbox-value">Todos os meios</span>
+                                </div>
+                                <div class="c-checkbox-container">    
+                                    <div class="c-checkbox"><i class="fa-solid fa-check" style="color: #ffffff;"></i></div>
+                                    <span class="c-checkbox-value">E-mail</span>
+                                </div>
+                                <div class="c-checkbox-container">
+                                    <div class="c-checkbox"><i class="fa-solid fa-check" style="color: #ffffff;"></i></div>
+                                    <span class="c-checkbox-value">SMS</span>
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </div>

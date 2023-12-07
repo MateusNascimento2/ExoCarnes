@@ -34,6 +34,10 @@
 
 .c-label-form {
     color: #FFF;
+    width: 100%;
+    max-width: 600px;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .c-form-inputs {

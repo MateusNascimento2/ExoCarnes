@@ -134,6 +134,15 @@
     margin: 0 auto;
 }
 
+.l-form-label {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
 .l-radio-container {
     display: flex;
     gap:10px;
@@ -160,7 +169,7 @@
 }
 
 .l-dropdown-container {
-    margin-top: 10px;
+    margin-top: 20px;
     width: 100%;
     max-width: 600px;
     position: relative;
@@ -194,16 +203,28 @@
     border: 1px solid black;
     background-color: #222;
     color: #FFF;
-    transition: top 0.4s linear;
     z-index: 5;
     width: 100%;
     max-width: 600px;
+    display: none;
 }
   
 ._dropdown-is-open {
-    top: 40px;
-    transition: top 0.4s linear;
+    top: 55px;
+    display: block;
 }
+
+.l-checkbox-container {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .l-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
  
 
 .l-location-container {
@@ -316,6 +337,10 @@
         max-width: 600px;
     }
 
+    .l-checkbox-wrapper {
+        flex-direction: row;
+      }
+
 }
 
 
@@ -368,4 +393,11 @@
         gap: 90px;
     }
 
+}
+
+@media screen and (min-width: 375px) {
+    ._dropdown-is-open {
+        top: 40px;
+        transition: top 0.4s linear;
+    }
 }
