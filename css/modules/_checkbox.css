@@ -26,7 +26,7 @@
   filter: brightness(1.3)
 }
 
-.fa-solid {
+ .fa-check {
   display: none !important;
 }
 
@@ -36,6 +36,6 @@
   line-height: 30px;
 }
 
-._checked .fa-solid {
+._checked .fa-check {
   display: inline-block !important;
 }
