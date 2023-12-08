@@ -217,14 +217,23 @@
 .l-checkbox-container {
     width: 100%;
     max-width: 600px;
-  }
+}
   
-  .l-checkbox-wrapper {
+.l-checkbox-wrapper {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 10px;
-  }
+}
+
+.l-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
  
 
 .l-location-container {

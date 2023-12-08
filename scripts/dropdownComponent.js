@@ -1,35 +1,32 @@
 
-export const openDropdown = (dropdownBox) => {
-  dropdownBox.addEventListener('click', () => {
+export const openDropdown = () => {
+  const dropdownItensContainer = document.querySelector('.l-dropdown-itens');
+  dropdownItensContainer.classList.toggle('_dropdown-is-open');
 
-    const dropdownItensContainer = document.querySelector('.l-dropdown-itens');
-    dropdownItensContainer.classList.toggle('_dropdown-is-open');
+  const dropdownLeftArrow = document.querySelector('.c-dropdown-left-arrow');
+  dropdownLeftArrow.classList.toggle('_left-arrow-open');
 
-    const dropdownLeftArrow = document.querySelector('.c-dropdown-left-arrow');
-    dropdownLeftArrow.classList.toggle('_left-arrow-open');
+  const dropdownRightArrow = document.querySelector('.c-dropdown-right-arrow');
+  dropdownRightArrow.classList.toggle('_right-arrow-open');
 
-    const dropdownRightArrow = document.querySelector('.c-dropdown-right-arrow');
-    dropdownRightArrow.classList.toggle('_right-arrow-open');
-  })
 }
 
-export const selectDropdownItem = (dropdownItem, dropdownBox) => {
-  dropdownItem.forEach(function(item) {
-    item.addEventListener('click', function() {
-      const value = this.firstElementChild.textContent;
+export const selectDropdownItem = (item, dropdownBox) => {
 
-      dropdownBox.firstElementChild.textContent = value;
+  const value = item.firstElementChild.textContent;
 
-      const dropdownItensContainer = document.querySelector('.l-dropdown-itens');
+  dropdownBox.firstElementChild.textContent = value;
 
-      dropdownItensContainer.classList.remove('_dropdown-is-open');
+  const dropdownItensContainer = document.querySelector('.l-dropdown-itens');
 
-      const dropdownLeftArrow = document.querySelector('.c-dropdown-left-arrow');
-      dropdownLeftArrow.classList.remove('_left-arrow-open');
-  
-      const dropdownRightArrow = document.querySelector('.c-dropdown-right-arrow');
-      dropdownRightArrow.classList.remove('_right-arrow-open');
-      
-    })
-  })
+  dropdownItensContainer.classList.remove('_dropdown-is-open');
+
+  const dropdownLeftArrow = document.querySelector('.c-dropdown-left-arrow');
+  dropdownLeftArrow.classList.remove('_left-arrow-open');
+
+  const dropdownRightArrow = document.querySelector('.c-dropdown-right-arrow');
+  dropdownRightArrow.classList.remove('_right-arrow-open');
+
+  return value;
+
 }
