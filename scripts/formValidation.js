@@ -6,6 +6,9 @@ export const formValidation = (event, radioButtonValue, dropdownValue) => {
 
   if (fullNameValue === "" || fullNameValue.split(' ').length < 2) {
     errorComponent.classList.add('_is-visible');
+    if (errorComponent.classList.contains('_sucess')) {
+      errorComponent.classList.remove('_sucess');
+    }
     errorComponent.lastElementChild.textContent = "O nome não pode estar em branco e deve possuir pelo menos nome e sobrenome !"
     return false
   }
@@ -15,6 +18,9 @@ export const formValidation = (event, radioButtonValue, dropdownValue) => {
 
   if (!emailRegex.test(emailInputValue)) {
     errorComponent.classList.add('_is-visible');
+    if (errorComponent.classList.contains('_sucess')) {
+      errorComponent.classList.remove('_sucess');
+    }
     errorComponent.lastElementChild.textContent = 'E-mail inválido. Certifique-se de que possui pelo menos um "@" e um ".", com o "." após o "@", e pelo menos um caractere entre eles.'
     return false;
   }
@@ -25,6 +31,9 @@ export const formValidation = (event, radioButtonValue, dropdownValue) => {
   console.log(telephoneInputValue.length)
   if (telephoneInputValue.length != 11) {
     errorComponent.classList.add('_is-visible');
+    if (errorComponent.classList.contains('_sucess')) {
+      errorComponent.classList.remove('_sucess');
+    }
     errorComponent.lastElementChild.textContent = 'Número de telefone inválido. Deve conter exatamente 11 caracteres após a remoção de espaços, parênteses e traços.'
     return false;
   }
@@ -32,18 +41,27 @@ export const formValidation = (event, radioButtonValue, dropdownValue) => {
   const messageInputValue = document.getElementById('message').value.trim();
   if (messageInputValue.length < 5) {
     errorComponent.classList.add('_is-visible');
+    if (errorComponent.classList.contains('_sucess')) {
+      errorComponent.classList.remove('_sucess');
+    }
     errorComponent.lastElementChild.textContent = 'A mensagem precisa ter 5 caracteres ou mais !'
     return false;
   }
 
   if (radioButtonValue === undefined) {
     errorComponent.classList.add('_is-visible');
+    if (errorComponent.classList.contains('_sucess')) {
+      errorComponent.classList.remove('_sucess');
+    }
     errorComponent.lastElementChild.textContent = 'Marque uma preferência !'
     return false;
   }
 
   if (dropdownValue === undefined) {
     errorComponent.classList.add('_is-visible');
+    if (errorComponent.classList.contains('_sucess')) {
+      errorComponent.classList.remove('_sucess');
+    }
     errorComponent.lastElementChild.textContent = 'Escolha um tipo de carne favorita !'
     return false;
   }
