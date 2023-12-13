@@ -3,6 +3,7 @@ import { createCard } from "./createCard.js";
 import { radioClick } from "./radioButton.js";
 import { openDropdown, selectDropdownItem } from "./dropdownComponent.js"
 import { markCheckbox } from "./checkboxComponent.js"
+import { formValidation } from "./formValidation.js";
 
 const headerButtonOpen = document.getElementById('c-navbar-button-open');
 const headerButtonClose = document.getElementById('c-navbar-button-close');
@@ -14,6 +15,7 @@ const radioDiv = document.querySelectorAll('.l-radio-button')
 const dropdownBox = document.querySelector('.l-dropdown-placeholder');
 const dropdownItem = document.querySelectorAll('.c-dropdown-item');
 const checkboxes = document.querySelectorAll('.c-checkbox');
+const formButton = document.querySelector('.c-submit-form-button');
 
 //Functions to open and close the header menu when it's on mobile screens
 headerButtonOpen.addEventListener('click', function () {
@@ -42,10 +44,14 @@ primeMeats.forEach((meat) => {
   primeCardsContainer.appendChild(createCard(meat));
 });
 
+let radioValue;
+let dropdownValue;
+let checkboxValue
+
 //Function to get the data and to mark the elements on the radio button component
 radioDiv.forEach((radio) => {
   radio.addEventListener('click', () => {
-    const radioValue = radioClick(radio)
+    radioValue = radioClick(radio)
     console.log(radioValue);
   })
 })
@@ -56,7 +62,7 @@ dropdownBox.addEventListener('click', () => openDropdown())
 
 dropdownItem.forEach((item) => {
   item.addEventListener('click', () => {
-    const dropdownValue = selectDropdownItem(item, dropdownBox)
+    dropdownValue = selectDropdownItem(item, dropdownBox)
     console.log(dropdownValue);
   })
 })
@@ -65,7 +71,10 @@ dropdownItem.forEach((item) => {
 //Function to mark the checkbox component
 checkboxes.forEach((box, index) => {
   box.addEventListener('click', () => {
-    const checkboxValue = markCheckbox(checkboxes, index)
+    checkboxValue = markCheckbox(checkboxes, index)
     console.log(checkboxValue)
   })
 })
+
+//Function to validate form 
+formButton.addEventListener('click', () => formValidation(event, radioValue, dropdownValue));

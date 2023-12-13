@@ -58,6 +58,31 @@
     cursor: pointer;
 }
 
+.c-error-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.8;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    gap: 10px;
+    display: none;
+}
+
+._is-visible {
+    display: block;
+}
+
+._sucess {
+    background-color: springgreen;
+}
+
 @media screen and (min-width: 1024px) { 
     .c-contact-subtitle--gray {
         font-size: 15px;
